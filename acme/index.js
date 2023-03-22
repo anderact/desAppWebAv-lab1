@@ -4,7 +4,7 @@ var url = require('url');
 
 http.createServer((req,res)=>{
     var u = url.parse(req.url,true); //obtiene la ruta actual en el servidor
-    var filename = "."+u.pathname; //extrae el nombre de la página (nombre del archivo html)
+    var filename = "."+u.pathname; //extrae el nombre de la página proveniente de la ruta actual (nombre del archivo html)
     fs.readFile(filename,function(err,data){
         if(err){ //en caso de error
             res.writeHead(404,{'Content-Type':'text/html'});
