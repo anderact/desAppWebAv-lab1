@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+}
+.items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    font-size: 1rem;
+
+}
